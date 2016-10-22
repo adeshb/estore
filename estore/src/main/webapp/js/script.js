@@ -80,6 +80,12 @@ eStoreApp.config(function($routeProvider) {
 		templateUrl : 'pages/desProduct.html',
 		controller : 'desProdController'
 	})
+	
+	// Describe Product
+	.when('/registerStore', {
+		templateUrl : 'pages/registerStore.html',
+		controller : 'regStoreController'
+	})
 
 	// route for the page
 	.when('/morris', {
