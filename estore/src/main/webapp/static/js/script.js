@@ -197,8 +197,32 @@ eStoreApp.controller('desProdController', function($scope, $http) {
 	}
 });
 
-eStoreApp.controller('regStoreController', function($scope) {
-	$scope.message = 'Look! I am an register Stpre page.';
+eStoreApp.controller('regStoreController', function($scope, $http) {
+	$scope.store = {};
+	
+	$scope.saveStore=function() { 
+		alert("submit called..");
+		$http({
+	        method: 'POST',
+	        url: "store/saveStore",
+	        data: $scope.store,
+	        contentType: 'application/json',
+	        mimeType: 'application/json',
+	      })
+	      .success(function(data, status) {
+	    	  alert("submit success..");
+	 		  $scope.sucessMsg= "<strong>Success!</strong> Store <strong><i>"+ store.storeName + "</i></strong> successfully saved.";
+			  $scope.showSuccessAlert = true;
+	          $scope.showErrorAlert = false;
+	      })
+	      .error(function(data, status) {
+	    	  alert("submit error..");
+	      	$scope.errorMsg= "<strong>Error!</strong> Failed to save store <strong><i>"+ store.storeName + "</i></strong> .";
+	    	$scope.showErrorAlert = true;
+	    	$scope.showSuccessAlert = false;
+	      });
+	}
+
 });
 
 eStoreApp.controller('tablesController', function($scope) {
@@ -206,7 +230,7 @@ eStoreApp.controller('tablesController', function($scope) {
 });
 
 eStoreApp.controller('formsController', function($scope) {
-	$scope.message = 'Contact us! JK. This is just a demo.';
+	
 });
 
 eStoreApp.controller('panels-wellsController', function($scope) {
