@@ -38,7 +38,7 @@
   <!-- SPELLS -->
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </head>
 
 <!-- define angular controller -->
@@ -287,6 +287,36 @@
                         <li>
                             <a href="#"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-edit fa-fw"></i> System Admin<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#registerStore">Register Store</a>
+                                </li>
+                                <li>
+                                    <a href="#subStore">Subscribe Store </a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+						<li>
+                            <a href="#"><i class="fa fa-edit fa-fw"></i> Store Owner<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#desProduct">Describe Product</a>
+                                </li>
+                                <li>
+                                    <a href="#manageProduct">Manage Products</a>
+                                </li>
+								<li>
+                                    <a href="#visitStore">Visit Store</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        
                         <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
@@ -329,7 +359,8 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                        <li>
+						
+						<li>
                             <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
@@ -371,33 +402,7 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-						<li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> System Admin<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#regStore">Register Store</a>
-                                </li>
-                                <li>
-                                    <a href="#subStore">Subscribe Store </a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-						<li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Store Owner<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#desProduct">Describe Product</a>
-                                </li>
-                                <li>
-                                    <a href="#manageProduct">Manage Products</a>
-                                </li>
-								<li>
-                                    <a href="#visitStore">Visit Store</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
+                        
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
